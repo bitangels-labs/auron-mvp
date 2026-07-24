@@ -1,0 +1,203 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_sETHToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "_dETHToken",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "dETHToken",
+    "outputs": [
+      {
+        "internalType": "contract DepositETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLeaderboard",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "stakerAddresses",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "stakedAmounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "percentageOfTotal",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPaginatedStakersDetailed",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "stakers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "timestamps",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "ranks",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "percentages",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "staker",
+        "type": "address"
+      }
+    ],
+    "name": "getStakerDetails",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "stakedAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stakingTimestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rank",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "percentageOfTotal",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "daysAgo",
+        "type": "uint256"
+      }
+    ],
+    "name": "getStakingActivity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activeStakers",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "recentStakers",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getStakingOverview",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalETHDeposited",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalETHStaked",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalStakers",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "averageStakeAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sETHToken",
+    "outputs": [
+      {
+        "internalType": "contract StakedETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
