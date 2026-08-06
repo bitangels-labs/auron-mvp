@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="auron-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="55%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#4338CA" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="50" fill="url(#auron-gradient)" />
+  <path
+    d="M52 24 74 76 H64.5 L59.2 62.5 H40.8 L35.5 76 H26 L48 24 Z M43.5 52.5 H56.5 L50 36 Z"
+    fill="white"
+  />
+  <path
+    d="M28 58 C38 44 62 44 72 58"
+    stroke="white"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.35"
+  />
+</svg>
